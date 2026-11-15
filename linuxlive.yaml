@@ -1,0 +1,43 @@
+
+schema_version: 1
+name: FreeOS
+id: freeos
+version: "1.0.0"
+base: ubuntu
+desktop: kde
+
+apps:
+  - firefox
+  - libreoffice
+  - vlc
+  - krita
+  - gimp
+  - blender
+  - vscode
+  - chromium
+  - heroic
+  - steam
+  - gcompris
+  - tuxpaint
+  - discord
+
+branding:
+  wallpaper: assets/wallpaper.png
+  logo: assets/logo.png
+  accent_color: "#e0661f"
+
+settings:
+  language: en_US
+  keyboard: us
+  timezone: Asia/Karachi
+  hostname: freeos
+  autologin: false
+  dock:
+    - firefox
+    - libreoffice
+    - vlc
+    - chromium
+    - krita
+    - gimp
+    - vscode
+    
