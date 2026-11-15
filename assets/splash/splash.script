@@ -1,0 +1,17 @@
+# FreeOS Plymouth theme
+# Place this directory at /usr/share/plymouth/themes/freeos/
+
+Window.SetBackgroundTopColor(0.01, 0.03, 0.10)
+Window.SetBackgroundBottomColor(0.01, 0.03, 0.10)
+
+screen_width = Window.GetWidth()
+screen_height = Window.GetHeight()
+
+background_image = Image("background.png")
+background_sprite = Sprite(background_image)
+background_sprite.SetX((screen_width - background_image.GetWidth()) / 2)
+background_sprite.SetY((screen_height - background_image.GetHeight()) / 2)
+background_sprite.SetZ(-100)
+
+# Keep the background centered and scaled to cover common display sizes.
+# The supplied artwork is 1920x1080; Plymouth centers it on other resolutions.
